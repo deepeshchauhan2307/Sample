@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
 				&& password.equalsIgnoreCase("password")) {
 			request.getRequestDispatcher("/WEB-INF/views/first.jsp").forward(request, response);
 		} else {
-			request.setAttribute("error", "InValid ID/Password");
+			request.setAttribute("error", "Invalid ID/Password");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(
 					request, response);
 		}
